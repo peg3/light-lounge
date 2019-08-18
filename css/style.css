@@ -1,0 +1,1322 @@
+/* -------------------- */
+/*  BASE
+/* --------------------- */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 2.4rem;
+  color: #333333;
+}
+
+/* -------------------- */
+/*  common
+/* --------------------- */
+
+section {
+  padding-bottom: 3.2rem;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+h2 {
+  font-family: "Futura";
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 4.3rem;
+  display: flex;
+  justify-content: center;
+  color: #33B3ED;
+  padding: 9.6rem 0;
+}
+
+h3 {
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333333;
+}
+.content {
+  max-width: 110.0rem;
+  margin: 0 auto;
+}
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-item::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #33B3ED;
+  transition: all 0.3s ease 0s;
+}
+.nav-item:hover {
+  cursor:pointer;
+  color: #33B3ED;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+/* -------------------- */
+/*  header
+/* --------------------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  transition: all 0.5s ease;
+  background-color:#FFBF5D;
+  box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.15);
+  
+}
+
+.hidden{
+  background: none;
+  position:fixed;
+  top:0;
+  transition: all 0.5s ease;
+  box-shadow: inherit;
+}
+
+.nav-bar{
+  display: flex;
+}
+
+.NavMenu{
+  display: none;
+}
+
+.Toggle{
+  display: none;
+}
+
+h1 {
+  width: 25.0rem;
+  height: 4.5rem;
+  margin-left: 5.6rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.header-list {
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+
+}
+
+.header-list-item {
+  margin-right: 5.6rem;
+  
+}
+
+.bg-img {
+  background-image: url(../img/firstview_img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.bg-mask {
+  background-color: rgba(0, 0, 0, 0.20);
+  height: 100vh;
+}
+
+.first-view-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 4.0rem;
+  font-weight: 600;
+  text-shadow: 0 0.2rem 0.2rem #444444
+}
+/* -------------------- */
+/*  feature
+/* --------------------- */
+
+#wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slideConts {
+  width: 100%;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .8s;
+}
+
+
+.f-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 9.6rem;
+  align-items: center;
+  box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.15);
+  transform: translate(-100%, 0);
+}
+
+.f-list.show {
+  transform: translate(0,0)!important;
+}
+
+.f-list-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 9.6rem;
+  align-items: center;
+  flex-flow: row-reverse;
+  box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.15);
+  transform: translate(100%, 0);
+}
+
+.f-list-2.show {
+  transform: translate(0, 0);
+}
+
+.f-item-top {
+  background-color: #FFBF5D;
+  padding: 6.0rem 0 21rem 0;
+  width: 17rem;
+  text-align: center;
+  margin-right: 5%;
+}
+
+.f-number {
+  font-family: "Varela Round";
+  font-size: 8.0rem;
+  color: #4A4A4A;
+  line-height: 1;
+}
+.f-item-text-box {
+  width: 44rem;
+  margin-right: 5%;
+}
+
+.f-item-text {
+  padding-top: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 3.0rem;
+  max-width: 43.8rem;
+}
+
+.f-item-img {
+  width: 50rem;
+  margin-right: 10%;
+}
+
+.f-item-pic {
+  width:50rem;
+}
+
+.f-item-top-2 {
+  background-color: #FFBF5D;
+  padding: 6.0rem 0 21rem 0;
+  width: 17rem;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.f-number-2 {
+  font-family: "Varela Round";
+  font-size: 8.0rem;
+  color: #4A4A4A;
+  line-height: 1;
+}
+.f-item-text-box-2 {
+  width: 44rem;
+  margin-left: 5%;
+}
+
+.f-item-text-2 {
+  padding-top: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 3.0rem;
+  max-width: 43.8rem;
+}
+
+.f-item-img-2 {
+  width: 50rem;
+  margin-left: 10%;
+}
+/* -------------------- */
+/*  service
+/* --------------------- */
+
+.service-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 81.2rem;
+  margin: 0 auto -48px;
+}
+
+.service-item {
+  width: 33.3%;
+  margin-bottom: 4.8rem;
+}
+
+.icon-img {
+  max-width: 10.0rem;
+  margin: 0 auto;
+}
+
+.service-text {
+  line-height: 3.8rem;
+  text-align: center;
+}
+
+.service-sub-text {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+/* -------------------- */
+/*  plan
+/* --------------------- */
+
+.plan {
+  background-color: #FFF7E4;
+  padding-bottom: 3.2rem;
+}
+
+.plan-img-pc{
+  display: block;
+}
+
+.plan-img-sp{
+  display: none;
+}
+
+.floor-content {
+  display: flex;
+  padding-top: 10.0rem;
+  margin-bottom: 4.8rem;
+}
+
+.floor-img {
+  background-color: #fff;
+}
+
+.floor-item {
+  display: flex;
+  width: 36.5rem;
+  background-color: #4A4A4A;
+  padding: 2.5rem 0;
+  
+}
+
+.floor-text {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.15);
+  padding: 0 5.4rem 0 5.4rem;
+}
+
+.floor-text-top {
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333333;
+  line-height: 3.4rem;
+  margin-top: 2.5rem;
+}
+
+.floor-text-sub {
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 2.0rem;
+  font-weight: 300;
+  color: #333333;
+  line-height: 3.0rem;
+}
+
+
+.floor-text-sub-s {
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #333333;
+  line-height: 2.4rem;
+}
+
+.plan-bottom {
+  background-color: #fff;
+  padding: 2.1rem 0;
+  text-align: center;
+}
+.plan-text-bottom {
+  font-size: 2.0rem;
+  line-height: 2.8rem;
+  display: inline-block;
+  border-bottom: solid 3px #EE0A0A;
+  font-weight: 600;
+}
+/* -------------------- */
+/*  news
+/* --------------------- */
+
+.news-block {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin: 0 auto;
+  max-width: 110.0rem;
+}
+.news-text {
+  line-height: 2rem;
+  padding: 3.0rem 0 3.0rem 0;
+  text-align: center;
+}
+/* -------------------- */
+/*  infomation
+/* --------------------- */
+
+.info-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 110.0rem;
+  margin: 0 auto;
+  padding: 0 3.6rem 3.6rem 3.6rem;
+}
+
+.info-left {
+  box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.15);
+  margin-right: 3rem;
+  width: 48rem;
+}
+
+.info-left-content {
+  padding: 3.0rem 0 0 2.0rem;
+}
+.info-text-bold {
+  line-height: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.info-text-small {
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #333333;
+  line-height: 2.4rem;
+  letter-spacing: 0.1em;
+}
+
+.info-text {
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #333333;
+  line-height: 2.4rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 5.2rem;
+}
+
+.tel-box {
+  background-color: #FFBF5D;
+  box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.15);
+}
+
+.tel-number{
+  line-height: 3.8rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 2.8rem 0;
+}
+
+.sp-number{
+  display: none;
+}
+
+.sp-number-text{
+  display: none;
+}
+.twitter-content {
+  box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.15);
+}
+
+.map {
+  position: relative;
+  max-width: 110.0rem;
+  height: 0;
+  padding-top: 48rem;
+  margin: 0 auto;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* -------------------- */
+/*  faq
+/* --------------------- */
+
+.accbox {
+  margin: 0 auto;
+  max-width: 110.0rem;/*最大幅*/
+}
+
+/*ラベル*/
+.accbox label {
+  display: block;
+  margin: 8px 0;
+  padding : 12px 16px;
+  color :#333;
+  font-weight: bold;
+  background : #FFBF5D;
+  cursor :pointer;
+  transition: all 0.8s;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333333;
+  line-height: 2.2rem;
+}
+
+/*アイコンを表示*/
+.accbox label:before {
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  padding-right: 8px;
+}
+
+/*ラベルホバー時*/
+.accbox label:hover {
+  background :#FFE0B0;
+}
+
+/*チェックは隠す*/
+.accbox input {
+  display: none;
+}
+
+/*中身を非表示にしておく*/
+.accbox .accshow {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #333333;
+  line-height: 4.2rem;
+}
+
+/*クリックで中身表示*/
+.cssacc:checked + label + .accshow {
+  height: auto;
+  padding: 16px;
+  background: #eaeaea;
+  opacity: 1;
+}
+
+.accbox .faq-a {
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333333;
+  line-height: 2.4rem;
+}
+
+.cssacc:checked + label:before {
+  content: '\f078';
+  font-weight: 900;
+}
+
+.m-b{
+  margin-bottom: 1.6rem;
+}
+/* -------------------- */
+/*  footer
+/* --------------------- */
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4A4A4A;
+  color: #fff;
+  padding: 32px 0 32px 0;
+}
+
+.footer-left {
+  display: flex;
+  margin-left: 5.6rem;
+}
+.footer-list {
+  display: flex;
+  width: 30rem;
+}
+
+.footer-text {
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 2.4rem;
+  margin-right: 3.6rem;
+}
+
+.footer-sns {
+  display: flex;
+  width: 14,4rem;
+}
+
+.sns-img {
+  width: 2.4rem;
+  margin-right: 2.4rem;
+  display: block;
+	transition-duration: 0.3s;
+}
+
+.sns-img:hover {
+  transform: scale(1.3);
+  transition-duration: 0.3s;
+}
+.footer-copy {
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 2.4rem;
+  margin-right: 5.6rem;
+  width: 31.1rem;
+  margin: 0 5.6rem;
+}
+
+/*パソコン・スマホ共通のCSS*/
+#PageTopBtn {
+  position: fixed; /*ボタンの配置場所を固定*/
+  bottom: 30px; /*下からのボタンの配置場所を指定*/
+  right: 30px; /*右からのボタンの配置場所を指定*/
+}
+#PageTopBtn a {
+  display: block; /*配置の調整*/
+  text-decoration: none; /*文字の下線を消す*/
+  color: #fff; /*文字の色*/
+  background:#33B3ED; /*ボタンの背景色*/
+  text-align: center; /*文字を中央に配置*/
+  border-radius: 50%; /*ボタンの角を少し丸くする*/
+  outline: none; /*クリックしたときの黒い枠を消す*/
+}
+#PageTopBtn a:hover {
+  text-decoration: none; 
+  background:#85cded; /*マウスオーバー時の背景色*/
+}
+
+#PageTopBtn {
+  font-size: 25px; /*文字のサイズ*/
+}
+#PageTopBtn a {
+  width: 60px; /*ボタンの幅*/
+  height: 60px; /*ボタンの高さ*/
+}
+
+.fa-angle-double-up{
+  padding: 16px;
+}
+
+
+@media screen and (max-width: 1100px) {
+  
+  
+  /* -------------------- */
+  /*  plan
+  /* --------------------- */
+  .plan-text-bottom {
+    font-size: 1.6rem;
+  }
+  
+  
+  /* -------------------- */
+  /*  news
+  /* --------------------- */
+  
+  .news-text {
+    font-size: 1.6rem;
+  }
+  
+  
+  .floor-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .floor-img {
+    width: 100%;
+  }
+  
+  .floor-item {
+    width: 100%;
+  }
+  
+  .floor-text {
+    width: 70%;
+    padding-bottom: 1.6rem;
+  }
+  
+  /* -------------------- */
+  /*  footer
+  /* --------------------- */
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-left {
+    margin-bottom: 3.2rem;
+  }
+  
+}
+
+  @media screen and (max-width: 1024px) {
+
+    /* -------------------- */
+    /*  header
+    /* --------------------- */
+
+    h1{
+      margin-left: 3rem;
+      width: 20rem;
+      height: 3.5rem;
+    }
+
+    .header-list {
+      font-size: 1.6rem;
+      line-height: 2.1rem;
+      font-weight: 600;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+    
+    .header-list-item {
+      margin-right: 3rem;
+      
+    }
+    /* -------------------- */
+    /*  feature
+    /* --------------------- */
+
+
+    h3{
+      text-align: center;
+      padding-top: 4.0rem;
+    }
+    .f-item-top { 
+      order: 0;
+      width: 20%;
+      margin: 0;
+    }
+
+    .f-item-text-box {
+      order: 2;
+      margin: 0 auto;
+    }
+
+    .f-item-text{
+      margin: 0 auto;
+      padding-bottom: 4.0rem;
+      padding-top: 0.8rem;
+    }
+    .f-item-img { 
+      order: 1;
+      width: 80%;
+      margin: 0;
+    }
+
+    .f-list {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .f-item-pic {
+      width: 100%;
+      height: 35rem;
+      object-fit: cover;
+    }
+
+    .f-item-top-2{
+      order: 0;
+      width: 20%;
+      margin: 0;
+    }
+
+    .f-item-text-box-2 {
+      order: 2;
+      margin: 0 auto;
+    }
+
+    .f-item-text-2{
+      margin: 0 auto;
+      padding-bottom: 4.0rem;
+      padding-top: 0.8rem;
+    }
+
+    .f-item-img-2 { 
+      order: 1;
+      width: 80%;
+      margin: 0;
+    }
+    
+    .f-list-2 {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .f-item-pic-2 {
+      width: 100%;
+      height: 35rem;
+      object-fit: cover;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+  
+    .content {
+      max-width: 76.8rem;
+      margin: 0 auto;
+    }
+    
+  /* -------------------- */
+  /*  header
+  /* --------------------- */
+  
+/*ナビメニューのスタイルを指定*/
+nav.NavMenu{
+  display: block;
+  position: fixed; /*表示位置を固定*/
+  z-index: 2; /*重ね順を変更*/
+  top: 0; /*表示位置を指定*/
+  left: 0; /*表示位置を指定*/
+  text-align: center; /*テキストを中央揃え*/
+  width: 100%; /*全幅表示*/
+  transform: translateY(-100%); /*ナビを上に隠す*/
+  transition: all 0.6s; /*アニメーションの時間を指定*/
+  }
+  
+  nav.NavMenu ul{
+  background: #FFBF5D; /*背景をグレーにする*/
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 67px;
+  padding-bottom: 16px;
+  }
+  
+  nav.NavMenu ul li{
+  font-family: "Futura";
+    font-size: 0.9em;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  }
+  
+  nav.NavMenu ul li:last-child{
+  padding-bottom: 0;
+  border-bottom: none; /*最後のメニュー項目のみ下線を消す*/
+  }
+  
+  nav.NavMenu ul li a{
+  display: block; /*クリックできる領域を広げる*/
+  color: #fff;
+  padding: 0.7em 0;
+  text-decoration: none;
+  }
+
+  nav.NavMenu ul li a:hover {
+    cursor:pointer;
+    color: #33B3ED;
+    transition: all 0.3s ease 0s;
+  }
+  /*トグルボタンが押されたときに付与するクラス*/
+  nav.NavMenu.active{
+  transform: translateY(0%);
+  }
+  /*トグルボタンのスタイルを指定*/
+  .Toggle {
+      display: block;
+      position: absolute;   
+     /* bodyに対しての絶対位置指定 */
+      right: 13px;
+      top: 12px;
+      width: 42px;
+      height: 42px;
+      cursor: pointer;
+      z-index: 3;
+  }
+  .Toggle span {
+      display: block;
+      position: absolute;
+      width: 30px;
+      border-bottom: solid 3px #fff;
+      -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
+      -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
+      transition: .35s ease-in-out;			/*変化の速度を指定*/
+      left: 6px;
+  }
+  .Toggle span:nth-child(1) {
+      top: 9px;
+  }
+
+  .Toggle span:nth-child(2) {
+      top: 18px;
+  }
+
+  .Toggle span:nth-child(3) {
+      top: 27px;
+  }
+
+  /* 最初のspanをマイナス45度に */
+  .Toggle.active span:nth-child(1) {
+      top: 18px;
+      left: 6px;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  }
+
+  /* 2番目と3番目のspanを45度に */
+  .Toggle.active span:nth-child(2),
+  .Toggle.active span:nth-child(3) {
+      top: 18px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      transform: rotate(45deg);
+  }
+
+  .Toggle.active.fixed{
+    position:fixed;
+  }
+
+  
+  .header{
+    width: 100%;
+    color: #fff;
+    background-color: #FFBF5D;
+    transition: .3s;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+
+  /* -------------------- */
+  /*  plan
+  /* --------------------- */
+  
+  .plan-img-pc{
+    display: none;
+  }
+  
+  .plan-img-sp{
+    display: block;
+  }
+  
+  .plan-text-bottom{
+    border-bottom: none;
+  }
+  /* -------------------- */
+  /*  infomation
+  /* --------------------- */
+  
+  .info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .info-left {
+    margin: 0 0 3.6rem 0;
+  }
+  
+  .map {
+    width: 48rem;
+  }
+
+  .sp-number{
+    font-size: 2.0rem;
+    line-height: 3.4rem;
+    font-weight: 600;
+    text-align: center;
+    display:block;
+    background-color: #FFBF5D;
+    border-bottom: 0.5rem solid #d17f02;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    position: relative;
+  }
+
+  .number-link{
+    text-decoration: none;
+    color: #4A4A4A;
+    display: block;
+    padding: 2.4rem 0;
+  }
+  
+  .tel-number{
+    display: none;
+  }
+
+  /* -------------------- */
+  /*  faq
+  /* --------------------- */
+  
+  .accbox {
+    padding: 0 2.4rem;
+  }
+  
+  .accbox .faq-a{
+    letter-spacing: 0.05em;
+  }
+
+  .accbox .faq-q{
+    letter-spacing: 0.05em;
+  }
+    /* -------------------- */
+  /*  footer
+  /* --------------------- */
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-text {
+    margin-bottom: 2.4rem;
+    margin-right: 0;
+  }
+  
+  .footer-sns {
+    margin-bottom: 3.6rem;
+  }
+
+  .sns-img:last-child {
+    margin-right: 0;
+  }
+  /* .footer-sns:last-child{
+    margin-right: 0;
+  } */
+  .sns-img {
+    width: 3.0rem;
+    margin-right: 4.0rem;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+
+  h2{
+    font-size: 2.4rem;
+    padding: 2.8rem 0 2.8rem 0;
+  }
+  /* -------------------- */
+  /*  header
+  /* --------------------- */
+
+
+  h1 {
+    width: 13.3rem;
+    height: 2.4rem;
+    margin-left: 1.2rem;
+    margin-top: 1.6rem;
+  }
+
+  .first-view-title {
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 3.0rem;
+  }
+
+  .bg-img{
+    background-image: url(../img/fv-img.jpg);
+  }
+
+    /* -------------------- */
+  /*  feature
+  /* --------------------- */
+
+  .feature{
+    padding-bottom: 0;
+  }
+
+  h3{
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333333;
+    line-height: 3rem;
+    padding-top: 3.2rem;
+  }
+  .f-list{
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .f-item-top{
+    padding: 3rem 0 7rem 0;
+  }
+
+  .f-number{
+    font-family: "Varela Round";
+    font-size: 5.0rem;
+    color: #4A4A4A;
+    line-height: 1;
+  }
+
+  .f-item-img{
+    width: calc(100%-97px);
+  }
+
+  .f-item-pic{
+    height: 15rem;
+    object-position: 100% 100%;
+  }
+
+  .f-item-text-box{
+    width: 100%;
+  }
+
+  .f-item-text{
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #333333;
+    line-height: 2.0rem;
+    max-width: 32rem;
+    padding-top: 0;
+    padding-bottom: 3.2rem;
+  }
+
+  .f-list-2{
+    width: 100%;
+    margin-bottom: 4.8rem;
+  }
+
+  .f-list{
+    margin-bottom: 4.8rem;
+  }
+  .f-item-top-2{
+    padding: 3rem 0 7rem 0;
+  }
+
+  .f-number-2{
+    font-family: "Varela Round";
+    font-size: 5.0rem;
+    color: #4A4A4A;
+    line-height: 1;
+  }
+
+  .f-item-img-2{
+    width: calc(100%-97px);
+  }
+
+  .f-item-pic-2{
+    height: 15rem;
+    object-position: 100% 100%;
+  }
+
+  .f-item-text-box-2{
+    width: 100%;
+  }
+
+  .f-item-text-2{
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #333333;
+    line-height: 2.0rem;
+    max-width: 32rem;
+    padding-top: 0;
+    padding-bottom: 3.2rem;
+  }
+
+  /* -------------------- */
+  /*  service
+  /* --------------------- */  
+
+  .service-text{
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333333;
+    line-height: 3rem;
+  }
+
+  .icon-img{
+    text-align: center;
+  }
+
+  .img-w{
+    width: 70%;
+  }
+    /* -------------------- */
+  /*  plan
+  /* --------------------- */
+  
+  .plan-bottom{
+    padding: 1.6rem 0.8rem;
+    text-align: inherit;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .plan-text-bottom{
+    font-size: 1.4rem;
+  }
+
+  .floor-content{
+    margin-bottom: 1.6rem;
+  }
+
+  .floor-text{
+    width: 65%;
+  }
+
+  .floor-text-top{
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: #333333;
+    line-height: 3rem;
+  }
+
+  .floor-text-sub{
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #333333;
+    line-height: 2.4rem;
+  }
+
+      /* -------------------- */
+      /*  news
+      /* --------------------- */
+
+  .news-text{
+    font-size: 1.4rem;
+  }
+    /* -------------------- */
+  /*  infomation
+  /* --------------------- */
+
+
+  .info-content{
+    padding: 1.6rem 1.6rem 3.6rem;
+  }
+  .info-left{
+    width: 100%;
+  }
+
+  .map{
+    width: 100%;
+  }
+
+  .info-text-bold{
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: #333333;
+    line-height: 3rem;
+  }
+
+
+  /* -------------------- */
+  /*  faq
+  /* --------------------- */
+
+  .accbox .faq-q{
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+  }
+  
+  .accbox .faq-a{
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+      /* -------------------- */
+  /*  footer
+  /* --------------------- */
+
+  .footer-copy {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  #PageTopBtn {
+    font-size: 20px;
+      bottom: 10px; /*下からのボタンの配置場所を指定*/
+      right: 10px; 
+}
+
+#PageTopBtn a {
+    width: 50px;
+    height: 50px;
+}
+}
